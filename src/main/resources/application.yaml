@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: concurrency
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/concurrency_lab
+    username: ${DB_USER}
+    password: ${DB_PASS}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+server:
+  port: ${SERVER_PORT:4805}
